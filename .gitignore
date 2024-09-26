@@ -1,0 +1,73 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test_output/
+
+# API keys / credentials
+config/settings.py
+.env
+*.env
+
+# Virtual environment
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Docker
+*.log
+docker-compose.yaml
+Dockerfile
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Git ignore
+.gitignore
