@@ -1,0 +1,8 @@
+# 用户身份验证信息配置
+#  配置项包括百度云AK、SK，建议使用环境变量的方式存储AK、SK，方式如下：
+#   export PADDLEHELIX_API_AK='your_access_key'
+#   export PADDLEHELIX_API_SK='your_secret_key'
+
+credentials:
+  paddlehelix_api_ak: "ALTAKylWU42qSHAd0h8vQScOIa"
+  paddlehelix_api_sk: "1d3093ee613e41368d35026ada9a38b4"

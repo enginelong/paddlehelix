@@ -1,0 +1,5 @@
+### 需要安装的工具包
+### pip install -r requirements
+
+requests~=2.32.3
+pyyaml~=6.0.2

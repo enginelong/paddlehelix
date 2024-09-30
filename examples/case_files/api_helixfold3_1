@@ -1,0 +1,12 @@
+{
+    "name": "7xwo_chain_F_22",
+    "recycle": 4,
+    "ensemble": 1,
+    "entities": [
+        {
+            "type": "protein",
+            "sequence": "HKTDSFVGLMA",
+            "count": 2
+        }
+    ]
+}

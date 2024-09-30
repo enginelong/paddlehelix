@@ -1,0 +1,42 @@
+[
+    {
+        "name": "7xwo_chain_F_22",
+        "entities": [
+            {
+                "type": "protein",
+                "sequence": "HKTDSFVGLMA",
+                "count": 2
+            }
+        ]
+    },
+    {
+        "name": "7xwo_chain_F_23",
+        "entities": [
+            {
+                "type": "protein",
+                "sequence": "HKTDSFVGLMA",
+                "count": 4
+            }
+        ]
+    },
+    {
+        "name": "7xwo_chain_F_24",
+        "entities": [
+            {
+                "type": "protein",
+                "sequence": "HKTDSFVGLMA",
+                "count": 2
+            }
+        ]
+    },
+    {
+        "name": "7xwo_chain_F_25",
+        "entities": [
+            {
+                "type": "protein",
+                "sequence": "HKTDSFVGLMA",
+                "count": 4
+            }
+        ]
+    }
+]
