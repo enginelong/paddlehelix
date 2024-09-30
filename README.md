@@ -1,5 +1,5 @@
 # paddlehelix
-PaddleHelix平台API服务客户端
+PaddleHelix平台API客户端
 
 # HF3 OpenAPI
 
