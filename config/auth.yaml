@@ -3,6 +3,6 @@
 #   export PADDLEHELIX_API_AK='your_access_key'
 #   export PADDLEHELIX_API_SK='your_secret_key'
 
-#credentials:
-  #paddlehelix_api_ak: ""
-  #paddlehelix_api_sk: ""
+credentials:
+  paddlehelix_api_ak: ""
+  paddlehelix_api_sk: ""
