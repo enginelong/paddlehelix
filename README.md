@@ -183,7 +183,17 @@ for r in resp:
 # code: 0 msg:  result: {"download_url":"", "file_url": "", "log_path":""}
 ```
 
-### 3.5 取消任务
+### 3.5 下载任务结果
+
+```python
+```
+
+### 3.6 批量下载任务结果
+
+```python
+```
+
+### 3.7 取消任务
 
 ```python
 from cli.client import APIClient
@@ -192,23 +202,13 @@ task_id = 65106
 APIClient.Common.cancel_task(task_id)
 ```
 
-### 3.6 批量取消任务
+### 3.8 批量取消任务
 
 ```python
 from cli.client import APIClient
 
 task_ids = [65106, 65107, 65108]
 APIClient.Common.cancel_task(task_ids)
-```
-
-### 3.7 下载任务结果
-
-```python
-```
-
-### 3.8 批量下载任务结果
-
-```python
 ```
 
 
