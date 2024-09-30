@@ -11,8 +11,8 @@ PaddleHelix平台API客户端
 
 - 将AK、SK设置为环境变量，或者设置到config/auth.yaml，由于是敏感信息，推荐设置为环境变量
 ```shell
-    export PADDLEHELIX_API_AK='your_access_key'
-    export PADDLEHELIX_API_SK='your_secret_key'
+export PADDLEHELIX_API_AK='your_access_key'
+export PADDLEHELIX_API_SK='your_secret_key'
 ```
 
 ## 2. 数据说明
