@@ -186,11 +186,19 @@ for r in resp:
 ### 3.5 下载任务结果
 
 ```python
+from cli.client import APIClient
+
+task_id = 65106
+path = APIClient.Common.download_task_result("xxx", task_id)
 ```
 
 ### 3.6 批量下载任务结果
 
 ```python
+from cli.client import APIClient
+
+task_ids = [65106, 65107]
+paths = APIClient.Common.download_task_results("xxx", task_ids)
 ```
 
 ### 3.7 取消任务
