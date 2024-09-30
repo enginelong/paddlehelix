@@ -66,6 +66,8 @@ PaddleHelix平台API服务客户端
 #### 3.1.1 直接输入JSON数据
 
 ```python
+from cli.client import APIClient
+
 data = {
     "name": "7xwo_chain_F_22",
     "recycle": 4,
@@ -86,6 +88,8 @@ print(f"code: {resp.code} msg: {resp.msg} taskID: {resp.data.task_id}")
 #### 3.1.2 输入JSON文件路径
 
 ```python
+from cli.client import APIClient
+
 path = "xxx"
 resp = APIClient.HelixFold3.submit(file_path=path)
 print(f"code: {resp.code} msg: {resp.msg} taskID: {resp.data.task_id}")
@@ -97,6 +101,8 @@ print(f"code: {resp.code} msg: {resp.msg} taskID: {resp.data.task_id}")
 #### 3.2.1 直接输入JSON数据
 
 ```python
+from cli.client import APIClient
+
 data = [
     {
         "name": "7xwo_chain_F_22",
@@ -129,6 +135,8 @@ for r in resp:
 #### 3.2.2 输入JSON数据列表文件路径
 
 ```python
+from cli.client import APIClient
+
 path = "xxx"
 resp = APIClient.HelixFold3.batch_submit(file_path=path)
 for r in resp:
@@ -140,6 +148,8 @@ for r in resp:
 #### 3.2.3 输入文件目录（目录下包含多个3.1.2中的文件）
 
 ```python
+from cli.client import APIClient
+
 path = "xxx"
 resp = APIClient.HelixFold3.batch_submit(file_dir=path)
 for r in resp:
@@ -151,6 +161,8 @@ for r in resp:
 ### 3.3 查询任务执行结果
 
 ```python
+from cli.client import APIClient
+
 task_id = 123
 resp = APIClient.Common.query_task_info(task_id)
 print(f"code: {resp.code} msg: {resp.msg} result: {resp.data.result}")
@@ -160,6 +172,8 @@ print(f"code: {resp.code} msg: {resp.msg} result: {resp.data.result}")
 ### 3.4 批量查询任务执行结果
 
 ```python
+from cli.client import APIClient
+
 task_ids = [123, 124, 125]
 resp = APIClient.Common.query_task_infos(task_ids)
 for r in resp:
@@ -172,6 +186,8 @@ for r in resp:
 ### 3.5 取消任务
 
 ```python
+from cli.client import APIClient
+
 task_id = 65106
 APIClient.Common.cancel_task(task_id)
 ```
@@ -179,6 +195,8 @@ APIClient.Common.cancel_task(task_id)
 ### 3.6 批量取消任务
 
 ```python
+from cli.client import APIClient
+
 task_ids = [65106, 65107, 65108]
 APIClient.Common.cancel_task(task_id)
 ```
