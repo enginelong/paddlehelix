@@ -51,7 +51,7 @@ def single_task_execute(input_path: str, output_path: str):
     resp = APIClient.Common.query_task_info(taskID)
     count = 0
     while True and count < 3:
-        if resp.code == ErrorCode.FAILURE:
+        if resp.code == ErrorCode.FAILURE.value:
             count += 1
             continue
         count = 0
@@ -68,7 +68,7 @@ def single_task_execute(input_path: str, output_path: str):
         else:
             break
         time.sleep(5)
-    if resp.code == ErrorCode.FAILURE:
+    if resp.code == ErrorCode.FAILURE.value:
         print("任务结果查询接口异常")
         return
     print("任务执行成功")

@@ -11,6 +11,8 @@ from urllib.parse import urlparse
 
 import requests
 
+from utils import env_util
+
 
 def download_file(save_dir: str, filename: str, url: str = "") -> str:
     """
@@ -180,4 +182,6 @@ def assemble_file_path(path: str) -> str:
     :param path: 文件相对路径
     :return: 文件绝对路径
     """
+    if len(os.getenv("PROJECT_ROOT", "")) <= 0:
+        env_util.init_env()
     return os.path.join(os.getenv("PROJECT_ROOT"), path)
