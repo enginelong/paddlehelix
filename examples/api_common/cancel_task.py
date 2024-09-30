@@ -15,3 +15,5 @@ APIClient.Common.cancel_task(task_id)
 
 # 批量取消任务
 print("=================== 批量取消任务 ===================")
+task_ids = [65106, 65107, 65108]
+APIClient.Common.cancel_task(task_id)
