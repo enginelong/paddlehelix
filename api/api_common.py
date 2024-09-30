@@ -31,6 +31,18 @@ class CommonClient:
                       headers=self.__authClient.generate_header(ServerAPIRegistry.Common.cancel_task.uri),
                       json={"task_id": task_id})
 
+    def batch_cancel_task(self, task_ids: list = None, **kwargs):
+        """
+        批量取消任务
+        :param task_ids: 任务ID列表
+        """
+        if task_ids is None or len(task_ids) <= 0:
+            return
+        for task_id in task_ids:
+            requests.post("".join([SCHEME, HOST, ServerAPIRegistry.Common.cancel_task.uri]),
+                          headers=self.__authClient.generate_header(ServerAPIRegistry.Common.cancel_task.uri),
+                          json={"task_id": task_id})
+
     def query_task_info(self, task_id: int = 0, **kwargs) -> QueryTaskInfoResponse:
         """
         HelixFold3查询任务处理结果API
