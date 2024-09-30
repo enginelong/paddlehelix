@@ -198,6 +198,20 @@ APIClient.Common.cancel_task(task_id)
 from cli.client import APIClient
 
 task_ids = [65106, 65107, 65108]
-APIClient.Common.cancel_task(task_id)
+APIClient.Common.cancel_task(task_ids)
 ```
+
+### 3.7 下载任务结果
+
+```python
+```
+
+### 3.8 批量下载任务结果
+
+```python
+```
+
+
+
+
 
