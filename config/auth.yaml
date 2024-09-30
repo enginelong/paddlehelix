@@ -4,5 +4,5 @@
 #   export PADDLEHELIX_API_SK='your_secret_key'
 
 credentials:
-  paddlehelix_api_ak: "ALTAKylWU42qSHAd0h8vQScOIa"
-  paddlehelix_api_sk: "1d3093ee613e41368d35026ada9a38b4"
+  paddlehelix_api_ak: ""
+  paddlehelix_api_sk: ""
