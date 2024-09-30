@@ -20,6 +20,17 @@ class CommonClient:
         self._sk = sk
         self.__authClient = APIAuthUtil(ak, sk)
 
+    def cancel_task(self, task_id: int = 0, **kwargs):
+        """
+        取消任务
+        :param task_id: 任务ID
+        """
+        if task_id <= 0:
+            return
+        requests.post("".join([SCHEME, HOST, ServerAPIRegistry.Common.cancel_task.uri]),
+                      headers=self.__authClient.generate_header(ServerAPIRegistry.Common.cancel_task.uri),
+                      json={"task_id": task_id})
+
     def query_task_info(self, task_id: int = 0, **kwargs) -> QueryTaskInfoResponse:
         """
         HelixFold3查询任务处理结果API

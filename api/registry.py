@@ -17,6 +17,7 @@ class ServerAPIRegistry:
 
     class Common:
         query_task_info = APIConfig("query_task_info", "/api/task/info")
+        cancel_task = APIConfig("cancel_task", "/api/task/cancel")
 
 
 class ClientAPIRepository:
