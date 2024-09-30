@@ -27,7 +27,7 @@ print(f"code: {resp.code} msg: {resp.msg} taskID: {resp.data.task_id}")
 
 # 从JSON文件加载数据，对应文件在case_files/api_helixfold3_1
 print("=================== 输入JSON文件路径提交任务 ===================")
-path = os.path.join(os.getenv("PROJECT_ROOT"), "examples/case_files/api_helixfold3_1")
+path = file_util.assemble_file_path("examples/case_files/api_helixfold3_1")
 data = file_util.parse_json_from_file(path)
 resp = APIClient.HelixFold3.submit(file_path=path)
 print(f"code: {resp.code} msg: {resp.msg} taskID: {resp.data.task_id}")

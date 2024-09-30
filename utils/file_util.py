@@ -172,3 +172,12 @@ def generate_directory_name() -> str:
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")  # 获取当前时间戳
     directory_name = f"batch-download-{timestamp}"  # 生成目录名
     return directory_name
+
+
+def assemble_file_path(path: str) -> str:
+    """
+    装配绝对路径
+    :param path: 文件相对路径
+    :return: 文件绝对路径
+    """
+    return os.path.join(os.getenv("PROJECT_ROOT"), path)

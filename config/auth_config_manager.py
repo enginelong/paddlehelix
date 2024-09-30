@@ -6,8 +6,10 @@ import threading
 
 import yaml
 
+from utils import file_util
+
 # 定义配置文件路径
-_auth_config_path = os.path.join(os.getenv("PROJECT_ROOT"), "config/auth.yaml")
+_auth_config_path = "config/auth.yaml"
 
 # 获取互斥锁
 _auth_config_lock = threading.Lock()
@@ -36,6 +38,11 @@ def load_config(file_path: str = _auth_config_path) -> dict:
     :param file_path:
     :return: 配置信息字典
     """
+    if not os.path.exists(file_path):
+        file_path = file_util.assemble_file_path(file_path)
+    if not os.path.exists(file_path):
+        file_path = file_util.assemble_file_path(_auth_config_path)
+    file_util.assemble_file_path(file_path)
     global auth_config
     if len(auth_config) > 0:
         return auth_config

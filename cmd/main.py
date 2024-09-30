@@ -3,18 +3,10 @@
 """
 import argparse
 import os
-import sys
 
-# 同sdk导入时一致 当用户使用命令行工具时 也需要初始化项目目录环境变量、用户身份信息
-project_root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(project_root_path)
-os.environ['PROJECT_ROOT'] = project_root_path
+from utils import env_util
 
-from config import auth_config_manager
-
-# 初始化用户身份验证信息
-auth_config = auth_config_manager.load_config()
-auth_config_manager.parse_api_ak_sk_from_auth_config(auth_config)
+env_util.init_env()
 
 
 def main():
