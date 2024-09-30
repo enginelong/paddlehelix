@@ -37,10 +37,10 @@ for r in resp:
     print(f"code: {r.code} msg: {r.msg} taskID: {r.data.task_id}")
 
 
-# 从JSON文件加载数据，对应文件在case_files/api_helixfold3_1
+# 从JSON列表文件加载数据，对应文件在case_files/api_helixfold3_1
 print("=================== 输入JSON文件路径批量提交任务 ===================")
 path = os.path.join(os.getenv("PROJECT_ROOT"), "examples/case_files/api_helixfold3_1")
-data = file_util.parse_json_from_file(path)
+data = file_util.parse_json_list_from_file(path)
 resp = APIClient.HelixFold3.batch_submit(file_path=path)
 for r in resp:
     print(f"code: {r.code} msg: {r.msg} taskID: {r.data.task_id}")
