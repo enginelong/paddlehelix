@@ -4,10 +4,6 @@
 import argparse
 import os
 
-from utils import env_util
-
-env_util.init_env()
-
 
 def main():
     parser = argparse.ArgumentParser(description="HelixFold3 command-line interface")
